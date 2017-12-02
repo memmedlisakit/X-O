@@ -5,6 +5,13 @@ var alertpop = document.querySelector(".alert-conatin");
 var popup = document.querySelector(".popup");
 
 
+popup.addEventListener("click", function(){
+	alertpop.innnerHTML="";
+	this.style.display = "none";
+});
+
+
+
 for(var i=0; i<buttons.length;i++){	
 	buttons[i].addEventListener("click", function(event){
 		if(count>7){
@@ -34,112 +41,128 @@ for(var i=0; i<buttons.length;i++){
 
 function win(){
 	if(buttons[0].innerHTML=="X"&&buttons[3].innerHTML=="X"&&buttons[6].innerHTML=="X"){
-			alert("X win");
+			alertpop.innerHTML="X win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[1].innerHTML=="X"&&buttons[4].innerHTML=="X"&&buttons[7].innerHTML=="X"){
-			alert("X win");
+			alertpop.innerHTML="X win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[2].innerHTML=="X"&&buttons[5].innerHTML=="X"&&buttons[8].innerHTML=="X"){
-			alert("X win");
+			alertpop.innerHTML="X win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[0].innerHTML=="X"&&buttons[1].innerHTML=="X"&&buttons[2].innerHTML=="X"){
-			alert("X win");
+			alertpop.innerHTML="X win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[3].innerHTML=="X"&&buttons[4].innerHTML=="X"&&buttons[5].innerHTML=="X"){
-			alert("X win");
+			alertpop.innerHTML="X win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[6].innerHTML=="X"&&buttons[7].innerHTML=="X"&&buttons[8].innerHTML=="X"){
-			alert("X win");
+			alertpop.innerHTML="X win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[0].innerHTML=="X"&&buttons[4].innerHTML=="X"&&buttons[8].innerHTML=="X"){
-			alert("X win");
+			alertpop.innerHTML="X win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[2].innerHTML=="X"&&buttons[4].innerHTML=="X"&&buttons[6].innerHTML=="X"){
-			alert("X win");
+			alertpop.innerHTML="X win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[0].innerHTML=="O"&&buttons[3].innerHTML=="O"&&buttons[6].innerHTML=="O"){
-		alert("O win");
+			alertpop.innerHTML="O win";
+			popup.style.display = "block";
 		for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[1].innerHTML=="O"&&buttons[4].innerHTML=="O"&&buttons[7].innerHTML=="O"){
-			alert("O win");
+			alertpop.innerHTML="O win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[2].innerHTML=="O"&&buttons[5].innerHTML=="O"&&buttons[8].innerHTML=="O"){
-			alert("O win");
+			alertpop.innerHTML="O win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[0].innerHTML=="O"&&buttons[1].innerHTML=="O"&&buttons[2].innerHTML=="O"){
-			alert("O win");
+			alertpop.innerHTML="O win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[3].innerHTML=="O"&&buttons[4].innerHTML=="O"&&buttons[5].innerHTML=="O"){
-			alert("O win");
+			alertpop.innerHTML="O win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[6].innerHTML=="O"&&buttons[7].innerHTML=="O"&&buttons[8].innerHTML=="O"){
-			alert("O win");
+			alertpop.innerHTML="O win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[0].innerHTML=="O"&&buttons[4].innerHTML=="O"&&buttons[8].innerHTML=="O"){
-			alert("O win");
+			alertpop.innerHTML="O win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
 			count=0;
 	}
 	if(buttons[2].innerHTML=="O"&&buttons[4].innerHTML=="O"&&buttons[6].innerHTML=="O"){
-			alert("O win");
+			alertpop.innerHTML="O win";
+			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
 				buttons[i].innerHTML="";
 			}
