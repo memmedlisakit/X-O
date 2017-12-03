@@ -40,7 +40,7 @@ for(var i=0; i<buttons.length;i++){
 
 
 function win(){
-	if(buttons[0].innerHTML=="X"&&buttons[3].innerHTML=="X"&&buttons[6].innerHTML=="X"){
+	if(buttons[0,3,6].innerHTML=="X"){
 			alertpop.innerHTML="X win";
 			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
@@ -48,7 +48,7 @@ function win(){
 			}
 			count=0;
 	}
-	if(buttons[1].innerHTML=="X"&&buttons[4].innerHTML=="X"&&buttons[7].innerHTML=="X"){
+	if(buttons[1,4,7].innerHTML=="X"){
 			alertpop.innerHTML="X win";
 			popup.style.display = "block";
 			for(var i=0; i<buttons.length;i++){
@@ -171,3 +171,8 @@ function win(){
 }
 
 
+
+// var arr=["X", "X", "X"];
+// if(arr[0,1,2]=="X"){
+// 	console.log("yes");
+// }
